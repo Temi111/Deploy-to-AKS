@@ -59,7 +59,6 @@ stages:
               namespace: 'default'
               secretType: 'dockerRegistry'
               secretName: '$(acrsecret)'
-              dockerRegistryEndpoint: 'K8SExamplesACR'
           - task: KubernetesManifest@0
             inputs:
               action: 'deploy'
